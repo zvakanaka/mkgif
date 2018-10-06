@@ -2,13 +2,13 @@
   "name": "mkgif",
   "version": "1.0.0",
   "description": "video -> gif",
-  "main": "index.js",
+  "main": "mkgif.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test/tests.js"
+    "start": "node bin/cli.js",
+    "test": "node test/test.js"
   },
   "bin": {
-    "mkgif": "./bin/mkgif.js"
+    "mkgif": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
