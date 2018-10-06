@@ -1,0 +1,31 @@
+{
+  "name": "mkgif",
+  "version": "1.0.0",
+  "description": "video -> gif",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/tests.js"
+  },
+  "bin": {
+    "mkgif": "./bin/mkgif.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvakanaka/mkgif.git"
+  },
+  "keywords": [
+    "video",
+    "gif",
+    "movie",
+    "ffmpeg",
+    "command",
+    "line"
+  ],
+  "author": "Adam Quinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zvakanaka/mkgif/issues"
+  },
+  "homepage": "https://github.com/zvakanaka/mkgif#readme"
+}
