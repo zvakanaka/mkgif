@@ -10,7 +10,7 @@ async function init() {
       console.error(e);
     }
   } else {
-    console.error('Not enough arguments\nUsage:\n\tmkgif in-file.mov [outfile.gif]');
+    console.error('Not enough arguments\nUsage:\n\tmkgif -s width:height in-file.mov [outfile.gif]');
   }
 }
 
