@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 const mkgif = require('../mkgif.js');
+const argv = require('minimist')(process.argv.slice(2));
 
 async function init() {
   if (process.argv.length >= 3) {
     try {
-      const inputArgs = process.argv.slice(2);
-      const {stdout, stderr} = await mkgif(inputArgs);
+      await mkgif(argv);
     } catch (e) {
       console.error(e);
     }
