@@ -1,9 +1,9 @@
 # mkgif
 `npm i -g mkgif`  
 ## Usage
-`mkgif in-file.mov [outfile.gif]`
+`mkgif in-file.mov [--width 480 --fps 20 outfile.gif]`
 
-![water gif](https://raw.githubusercontent.com/zvakanaka/mkgif/master/test/water.gif)  
+![dog doing trick gif](test/test.gif)  
 
 ## Dependencies
 `ffmpeg`  
