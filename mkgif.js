@@ -19,7 +19,7 @@ async function mkgif(argv) {
   const delay = Number(argv.delay || DEFAULT_DELAY);
   const width = Number(argv.width || DEFAULT_WIDTH);
 
-  const ffmpegCommand = `ffmpeg -i ${inputFileName} -vf scale=${width}:-1 -r ${framerate} -f image2pipe -vcodec ppm - | convert -delay ${delay} -layers Optimize -loop 0 - ${outputFileName}`;
+  const ffmpegCommand = `ffmpeg -hide_banner -i ${inputFileName} -vf scale=${width}:-1 -r ${framerate} -f image2pipe -vcodec ppm - | convert -delay ${delay} -layers Optimize -loop 0 - ${outputFileName}`;
   const args = ffmpegCommand.split(' ').slice(1);
   console.log(ffmpegCommand);
   const duration = await getVideoDuration(inputFileName);
